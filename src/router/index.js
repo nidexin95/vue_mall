@@ -1,36 +1,36 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-// const Home = () => import('../views/Home/Home')
-// const Accident = () => import('../views/accident/Accident')
-// const ProFile = () => import('../views/profile/ProFile')
-// const ShowCat = () => import('../views/showcat/ShowCat')
+const Home = () => import('views/Home/Home')
+const Accident = () => import('views/accident/Accident')
+const ProFile = () => import('views/profile/ProFile')
+const ShowCat = () => import('views/showcat/ShowCat')
 
 Vue.use(Router)
 
 
 
 const routes = [
-    // {
-    //     path: '',
-    //     redirect: '/Home'
-    // },
-    // {
-    //     path: '/Home',
-    //     component: Home
-    // },
-    // {
-    //     path: '/Accident',
-    //     component: Accident
-    // },
-    // {
-    //     path: '/ShowCat',
-    //     component: ShowCat
-    // },
-    // {
-    //     path: '/ProFile',
-    //     component: ProFile
-    // }
+    {
+        path: '',
+        redirect: '/Home'
+    },
+    {
+        path: '/Home',
+        component: Home
+    },
+    {
+        path: '/Accident',
+        component: Accident
+    },
+    {
+        path: '/ShowCat',
+        component: ShowCat
+    },
+    {
+        path: '/ProFile',
+        component: ProFile
+    }
 ]
 const router = new Router({
     routes,
